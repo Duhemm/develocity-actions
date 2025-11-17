@@ -38,6 +38,7 @@ jobs:
           develocity-url: ${{ env.DV_URL }}
           develocity-access-key: ${{ secrets.DV_SOLUTIONS_ACCESS_KEY }}
           develocity-injection-enabled: true
+          develocity-npm-agent-url-override: https://develocity-npm-pkgs.grdev.net/gradle-develocity-agent-3.0.0-branch-main-20251113145013.tgz
       - name: Install Dependencies
         run: npm ci
       - name: Build
